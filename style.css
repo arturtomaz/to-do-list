@@ -1,0 +1,15 @@
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	background-color: #029ad7;
+}
+.models label {
+	display: flex;
+	cursor: pointer;
+}
+
+.lista-toda {
+	list-style: none;
+}
