@@ -5,11 +5,12 @@
 body {
 	background-color: #029ad7;
 }
+
+/* .models {
+	display: none;
+} */
+
 .models label {
 	display: flex;
 	cursor: pointer;
-}
-
-.lista-toda {
-	list-style: none;
 }
