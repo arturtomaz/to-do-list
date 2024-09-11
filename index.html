@@ -8,14 +8,31 @@
 	</head>
 	<body>
 		<div class="models">
-			<div class="tarefa-item">
-				<input type="checkbox" class="checkbox" onclick="marcar()" />
+			<label class="tarefa-item" onclick="marcar(this.value)">
+				<input type="checkbox" class="checkbox" />
+				<img
+					src="https://courses.cs.washington.edu/courses/cse154/18sp/18sp-data/lab/lab06/slides/hidden/img/x.png"
+					onclick="desmarcar()"
+				/>
 				<div class="tarefa-texto"></div>
+			</label>
+		</div>
+		<div class="hud-area">
+			<h1 class="titulo">TO-DO LIST</h1>
+			<div class="tarefas-area">
+				<p class="subtitulo">Tarefas:</p>
+				<div class="lista-toda"></div>
+			</div>
+			<div class="add-area">
+				<label>
+					<p class="titulo-add">Nome da Tarefa</p>
+					<input type="text" class="add-input" placeholder="Nome da tarefa" />
+				</label>
+				<button onclick="addTask(document.querySelector('.add-input').value)">
+					Adicionar Tarefa
+				</button>
 			</div>
 		</div>
-		<h1>TO-DO LIST</h1>
-		<p>Tarefas:</p>
-		<div class="lista-toda"></div>
 		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
